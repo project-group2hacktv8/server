@@ -1,6 +1,6 @@
 const app = require("express")();
 const server = require("http").Server(app);
-const socketio = require("socket.io")(server);
+const io = require("socket.io")(server);
 
 let position = {
     x: 200,
